@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="spiceos-beta"
+           fetch="https://github.com/SpiceOS-Beta/"
+           revision="12" />
+
+  <!-- Rootdir -->
+  <project path="bionic" name="bionic" groups="pdk" remote="spiceos-beta" />
+  <project path="manifest" name="manifest" remote="spiceos-beta" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="spiceos-beta" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk" remote="spiceos-beta" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="spiceos-beta" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/spiceos/sepolicy" name="android_device_spiceos_sepolicy" remote="spiceos-beta" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="spiceos-beta" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="spiceos-beta" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="12-legacy" remote="spiceos-beta" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="12-legacy-um" remote="spiceos-beta" />
+
+  <!-- External -->
+  <project path="external/selinux" name="android_external_selinux" groups="pdk" remote="spiceos-beta" />
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="spiceos-beta" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="spiceos-beta" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="spiceos-beta" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="spiceos-beta" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="spiceos-beta" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="spiceos-beta" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="spiceos-beta" />
+  <project path="hardware/spiceos/interfaces" name="android_hardware_spiceos_interfaces" remote="spiceos-beta" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="spiceos-beta" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="spiceos-beta" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" groups="pdk-fs" remote="spiceos-beta" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="spiceos-beta" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="spiceos-beta" />
+
+  <!-- System -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="spiceos-beta" />
+  <project path="system/netd" name="android_system_netd" groups="pdk" remote="spiceos-beta" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="spiceos-beta" />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" groups="pdk" remote="spiceos-beta" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="spiceos-beta" />
+
+  <!-- Vendor -->
+  <project path="vendor/spiceos" name="android_vendor_spiceos" remote="spiceos-beta" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="spiceos-beta" />
+</manifest>
