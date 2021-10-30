@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch=".." />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
   <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
-           revision="refs/tags/android-12.0.0_r2" />
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
+  <default revision="refs/tags/android-12.0.0_r2"
+           remote="aosp" />
 
-  <default revision="refs/heads/12"
-           remote="github"
-           sync-c="true"
-           sync-j="4" />
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="spice"
+           fetch="https://github.com/SpiceOS-Beta"
+           revision="refs/heads/12" />
+
+  <remote  name="lineage"
+           fetch="https://github.com/LineageOS" />
 
   <superproject name="platform/superproject" remote="aosp" />
   <contactinfo bugurl="go/repo-bug" />
@@ -1046,4 +1049,14 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+
+  <!-- Remove unused AOSP repos -->
+  <include name="snippets/remove.xml" />
+
+  <!-- Add all tracked SpiceOS repos -->
+  <include name="snippets/spice.xml" />
+
+  <!-- Add all tracked LineageOS repos -->
+  <include name="snippets/lineage.xml" />
+
 </manifest>
