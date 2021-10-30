@@ -13,10 +13,12 @@
 <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="arrow" />
 <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="arrow" />
 <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="arrow" />
+<project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc" />
 <project path="external/exfatprogs" name="android_external_exfatprogs" remote="arrow" />
 <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="arrow" />
 <project path="external/json-c" name="android_external_json-c" remote="arrow" />
 <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
+<project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="github" revision="sc" />
 
 <!-- hardware repos -->
 <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pdk-qcom" remote="arrow" revision="arrow-12.0-caf" />
