@@ -20,20 +20,24 @@
   <remove-project name="platform/frameworks/opt/telephony"/>
   <remove-project name="platform/frameworks/native"/>
   <remove-project name="platform/hardware/libhardware"/>
-  
+
   <!-- packages -->
   <remove-project name="platform/packages/apps/Settings"/>
-  
-  <!-- Prebuilts -->
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
- 
-  <!-- system -->
-  <remove-project name="platform/system/core"/>
-  <remove-project name="platform/system/vold"/>
 
+  <!-- hardware -->
+  <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/qcom/sdm845/bt" />
+  <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/sdm845/display" />
+  <remove-project name="platform/hardware/qcom/sdm845/gps" />
+  <remove-project name="platform/hardware/qcom/sdm845/media" />
+  <remove-project name="platform/hardware/qcom/sdm845/thermal" />
+  <remove-project name="platform/hardware/qcom/sdm845/vr" />
+
+  <!-- system -->
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/vold" />
+  <remove-project name="platform/system/libziparchive" />
+  <remove-project name="platform/system/tools/mkbootimg" />
+  
 </manifest>
