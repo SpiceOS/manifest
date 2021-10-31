@@ -17,6 +17,25 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <project path="external/selinux" name="android_external_selinux" remote="spice" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="spice" />
+
+  <project path="frameworks/av" name="android_frameworks_av" remote="spice" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="spice" />
+  <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="spice" />  
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="spice" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="spice" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="spice" />
+
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="spice" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spice" />
+
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="spice" />
+
+  <project path="system/core" name="android_system_core" remote="spice" />
+  <project path="system/vold" name="android_system_vold" remote="spice" />
+
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="spice" />
   <!-- Vendor -->
   <project path="vendor/spiceos" name="android_vendor_spiceos" remote="spice" />
 
