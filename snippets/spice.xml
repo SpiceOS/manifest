@@ -64,6 +64,7 @@
   <!-- External -->
   <project path="external/selinux" name="android_external_selinux" groups="pdk" remote="spiceos" />
   <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="spiceos" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" groups="pdk" remote="spiceos" />
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="spiceos" />
