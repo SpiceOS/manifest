@@ -100,6 +100,7 @@
 
   <!-- Vendor -->
   <project path="vendor/spiceos" name="android_vendor_spiceos" remote="spiceos" />
+  <project path="vendor/support" name="android_vendor_support" remote="spiceos" />
 
   <!--Clang 14.0.1-->
   <project path="prebuilts/clang/host/linux-x86/clang-8051348" name="SpiceOS/android_prebuilts_clang_host_linux-x86_clang-8051348" remote="gitlab" revision="12" clone-depth="1" />
