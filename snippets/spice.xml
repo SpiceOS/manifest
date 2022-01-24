@@ -80,6 +80,7 @@
   <!-- Packages -->
   <!-- <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="spiceos" /> -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="spiceos" />
+  <project path="packages/apps/SpiceOSSettings" name="android_packages_apps_SpiceOSSettings" groups="pdk-fs" remote="spiceos" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="spiceos" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" groups="pdk-fs" remote="spiceos" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="spiceos" />
