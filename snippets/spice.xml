@@ -26,7 +26,7 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="spiceos" />
 
   <!-- Packages -->
-  <project path="packages/modules/adb" name="android_packages_modules_adb" groups="pdk" remote="lineage" />
+  <project path="packages/modules/adb" name="android_packages_modules_adb" groups="pdk" remote="spiceos" />
 
   <!-- Vendor -->
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="spiceos" />
