@@ -1,6 +1,6 @@
 <div align="center">
 <hr>
-<img src="https://github.com/SpiceOS/xda_template/blob/11/Banner/header.png?raw=true">
+<img src="https://github.com/SpiceOS-Beta/xda_template/blob/12/Banner/header.png?raw=true">
 <br>
 <br>
 <strong><i>Just a spiced up AOSP ROM ;)</i></strong>
