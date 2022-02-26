@@ -91,6 +91,7 @@
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="spiceos" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="spiceos" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="spiceos" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="spiceos" />
 
   <!--Rootdir-->
   <project path="libcore" name="android_libcore" remote="spiceos" />
@@ -98,6 +99,7 @@
   <!-- System -->
   <project path="system/core" name="android_system_core" groups="pdk" remote="spiceos" />
   <!-- <project path="system/netd" name="system_netd" groups="pdk" remote="spiceos" /> -->
+  <project path="system/bt" name="android_system_bt" groups="pdk" remote="spiceos" />
   <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="spiceos" />
   <!-- <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" groups="pdk" remote="spiceos" /> -->
   <!-- <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="spiceos" /> -->
@@ -106,6 +108,10 @@
   <!-- Vendor -->
   <project path="vendor/spiceos" name="android_vendor_spiceos" remote="spiceos" />
   <project path="vendor/support" name="android_vendor_support" remote="spiceos" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_commonsys-intf_bluetooth" remote="spiceos" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_commonsys_bluetooth_ext" remote="spiceos" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" remote="spiceos" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_commonsys_system_bt" remote="spiceos" />
 
   <!--Clang 14.0.2-->
   <project path="prebuilts/clang/host/linux-x86/clang-8148192" name="SpiceOS/android_prebuilts_clang_host_linux-x86_clang-8148192" remote="gitlab" revision="12" clone-depth="1" />
