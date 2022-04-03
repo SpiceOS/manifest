@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="lineage"
+          fetch="https://github.com/"
+          revision="lineage-18.1" />
+
+  <!-- external repos -->
+  <project path="external/ant-wireless/ant_client" name="LineageOS/android_external_ant-wireless_ant_client" remote="lineage" />
+  <project path="external/ant-wireless/hidl" name="LineageOS/android_external_ant-wireless_hidl" remote="lineage" />
+  <project path="external/ant-wireless/ant_native" name="LineageOS/android_external_ant-wireless_ant_native" remote="lineage" />
+  <project path="external/ant-wireless/ant_service" name="LineageOS/android_external_ant-wireless_ant_service" remote="lineage" />
+  <project path="external/ant-wireless/antradio-library" name="LineageOS/android_external_ant-wireless_antradio-library" remote="lineage" />
+  <project path="external/exfatprogs" name="LineageOS/android_external_exfatprogs" remote="lineage" />
+  <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" remote="lineage" />
+
+  <!-- Packages -->
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-19.1" remote="lineage" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1"  revision="lineage-19.1" remote="lineage" />
+  <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" revision="lineage-19.1" remote="lineage" />
+
+  <!-- Tools -->
+  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" revision="lineage-19.1" remote="lineage" />
+
+
+</manifest>
