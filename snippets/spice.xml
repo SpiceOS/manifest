@@ -6,7 +6,7 @@
 
   <remote name="spiceos"
           fetch="https://github.com/SpiceOS-Beta/"
-          revision="refs/heads/12.1" />
+          revision="12.1" />
 
   <remote name="superior"
           fetch="https://github.com/SuperiorOS/"
@@ -30,7 +30,9 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <project path="art" name="android_art" groups="pdk" remote="spiceos" />
   <project path="bionic" name="android_bionic" groups="pdk" remote="spiceos" />
+  <project path="libcore" name="SpiceOS-Beta/android_libcore" revision="12.1" remote="github" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="spiceos" />
 
   <!-- device repos -->
