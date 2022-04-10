@@ -97,6 +97,8 @@
   <remove-project name="platform/packages/apps/Music" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <remove-project name="platform/packages/apps/Messaging" />
 
   <!-- system -->
   <remove-project name="platform/system/bt" />
