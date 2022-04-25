@@ -101,7 +101,9 @@
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="spiceos" />
   <project path="packages/apps/SpiceOSSettings" name="android_packages_apps_SpiceOSSettings" groups="pdk-fs" remote="spiceos" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="spiceos" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="spiceos" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="spiceos" />
+  <project path="packages/apps/Updater_Db" name="android_packages_apps_Updater_Db" remote="spiceos" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="superior" />
   <project path="packages/apps/FaceUnlockService" name="SpiceOS/android_packages_apps_FaceUnlockService" remote="gitlab" revision="12.1"/>
 
@@ -113,6 +115,7 @@
   <project path="system/security" name="android_system_security" remote="spiceos" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="spiceos" />
   <project path="system/vold" name="android_system_vold" remote="spiceos" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="spiceos" />
 
   <!-- vendor repos -->
   <project path="vendor/spiceos" name="android_vendor_spiceos" remote="spiceos" />

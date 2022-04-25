@@ -103,6 +103,7 @@
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/apps/Contacts" />
+  <remove-project name="platform/system/update_engine" />
 
   <!-- system -->
   <remove-project name="platform/system/bt" />
