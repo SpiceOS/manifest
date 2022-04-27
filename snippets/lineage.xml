@@ -24,5 +24,7 @@
   <!-- Tools -->
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" revision="lineage-19.1" remote="lineage" />
 
+  <!-- Hardware -->
+  <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="qcom,pdk-qcom" remote="lineage" revision="lineage-19.1-caf" />
 
 </manifest>
