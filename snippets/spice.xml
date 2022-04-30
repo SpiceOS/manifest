@@ -12,6 +12,10 @@
           fetch="https://github.com/SuperiorOS/"
           revision="refs/heads/twelvedotone" />
 
+  <remote  name="proton"
+           fetch="https://github.com/ProtonAOSP/"
+           revision="sc-v2" />
+
   <remote name="gitlab"
           fetch="https://gitlab.com/" />
 
@@ -50,6 +54,8 @@
   <project path="external/tinycompress" name="android_external_tinycompress" remote="spiceos" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" groups="pdk" remote="spiceos" />
   <project path="external/faceunlock" name="SpiceOS/android_external_faceunlock" remote="gitlab" revision="12.1" />
+  <project name="android_external_colorkt" path="external/colorkt" remote="proton" groups="proton" />
+  <project name="android_external_themelib" path="external/themelib" remote="proton" groups="proton" />
 
   <!-- framework repos -->
   <project path="frameworks/base" name="android_frameworks_base" remote="spiceos" />
