@@ -25,7 +25,7 @@
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
 
   <!-- Hardware -->
-  <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="qcom,pdk-qcom" remote="lineage" revision="lineage-19.1-caf" />
+  <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="qcom,lahaina" remote="lineage" revision="lineage-19.1-caf" />
 
   <!-- vendor repos -->
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" remote="lineage" />
