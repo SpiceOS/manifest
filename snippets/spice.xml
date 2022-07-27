@@ -155,4 +155,7 @@
   <!--Clang 14.0.7-->
   <project path="prebuilts/clang/host/linux-x86/clang-8508608" name="SpiceOS/android_prebuilts_clang_host_linux-x86_clang-8508608" remote="gitlab" revision="12.1" clone-depth="1" />
 
+  <!--Clang 15.0.1-->
+  <project path="prebuilts/clang/host/linux-x86/clang-8850317" name="SpiceOS/android_prebuilts_clang_host_linux-x86_clang-8850317" remote="gitlab" revision="12.1" clone-depth="1" />
+
 </manifest>
