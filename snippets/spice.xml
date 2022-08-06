@@ -5,7 +5,7 @@
            fetch="https://github.com/" />
 
   <remote name="spiceos"
-          fetch="https://github.com/SpiceOS-Beta"
+          fetch="https://github.com/SpiceOS"
           revision="12.1" />
 
   <remote name="superior"

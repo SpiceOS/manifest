@@ -43,7 +43,7 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 4.To initialize your local repository using the SpiceOS trees, use a command like this:
 
-    repo init -u git@github.com:SpiceOS-Beta/manifest.git -b 12.1 --depth=1
+    repo init -u git@github.com:SpiceOS/manifest.git -b 12.1 --depth=1
 
 5.Then to sync up:
 
