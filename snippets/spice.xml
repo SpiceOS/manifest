@@ -39,6 +39,11 @@
   <!-- bootable repos -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="spiceos" />
 
+  <!-- device repos -->
+  <project path="device/spiceos/sepolicy" name="android_device_spiceos_sepolicy" remote="spiceos" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="spiceos" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="spiceos" />
+
   <!-- external repos -->
   <project path="external/json-c" name="LineageOS/android_external_json-c" remote="lineage" />
   <project path="external/selinux" name="android_external_selinux" remote="spiceos" />
