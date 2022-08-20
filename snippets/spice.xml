@@ -80,6 +80,10 @@
   <!-- packages repos -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="spiceos" />
 
+  <!-- prebuilt repos -->
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" clone-depth="1" remote="arrow" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" clone-depth="1" remote="arrow" />
+
   <!-- system repos -->
   <project path="system/core" name="android_system_core" remote="spiceos" />
 
