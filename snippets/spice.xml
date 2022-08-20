@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote  name="github"
+            fetch="https://github.com/" />
+
+    <remote name="spiceos"
+        fetch="https://github.com/SpiceOS"
+        revision="13" />
+
+    <remote  name="arrow"
+            fetch="https://github.com/ArrowOS"
+            review="https://review.arrowos.net/"
+            revision="refs/heads/arrow-13.0" />
+
+    <remote  name="lineage"
+            fetch="https://github.com/"
+            revision="lineage-19.1" />
+
+
+  <!-- build repos -->
+  <project path="build/make" name="android_build" groups="pdk" remote="spiceos" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="spiceos" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="art" name="android_art" remote="spiceos" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="spiceos" />
+  <project path="manifest" name="manifest" remote="spiceos" />
+
+  <!-- bootable repos -->
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="spiceos" />
+
+  <!-- external repos -->
+  <project path="external/json-c" name="LineageOS/android_external_json-c" remote="lineage" />
+  <project path="external/selinux" name="android_external_selinux" remote="spiceos" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="spiceos" />
+  <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
+
+  <!-- framework repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="spiceos" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="spiceos" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="spiceos" />
+
+  <!-- hardware repos -->
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="arrow" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-13.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-13.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-13.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-13.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-13.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-13.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-13.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-13.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-13.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="arrow" revision="arrow-13.0-caf"/>
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="spiceos" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spiceos" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="arrow" />
+  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="arrow" />
+
+  <!-- packages repos -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="spiceos" />
+
+  <!-- system repos -->
+  <project path="system/core" name="android_system_core" remote="spiceos" />
+
+  <!-- tools repos -->
+  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
+
+  <!-- vendor repos -->
+  <project path="vendor/spiceos" name="android_vendor_spiceos" remote="spiceos" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="arrow" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" remote="arrow" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="arrow" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="arrow" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="arrow" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arrow" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="arrow" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="arrow" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="arrow" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="arrow" />
+  <project path="vendor/support" name="android_vendor_support" remote="spiceos" />
+
+</manifest>
