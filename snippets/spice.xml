@@ -106,6 +106,7 @@
 
   <!-- tools repos -->
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
+  <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
 
   <!-- vendor repos -->
   <project path="vendor/spiceos" name="android_vendor_spiceos" remote="spiceos" />
