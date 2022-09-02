@@ -17,6 +17,9 @@
             fetch="https://github.com/"
             revision="lineage-19.1" />
 
+    <remote name="gitlab"
+            fetch="https://gitlab.com/"/>
+
 
   <!-- build repos -->
   <project path="build/make" name="android_build" groups="pdk" remote="spiceos" >
@@ -137,5 +140,8 @@
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="arrow" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="arrow" />
   <project path="vendor/support" name="android_vendor_support" remote="spiceos" />
+
+  <!--Clang 15.0.1-->
+  <project path="prebuilts/clang/host/linux-x86/clang-8850317" name="SpiceOS/android_prebuilts_clang_host_linux-x86_clang-8850317" remote="gitlab" revision="13" clone-depth="1" />
 
 </manifest>
