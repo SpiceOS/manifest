@@ -46,6 +46,7 @@
   <project path="device/spiceos/sepolicy" name="android_device_spiceos_sepolicy" remote="spiceos" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="spiceos" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="spiceos" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" groups="qcom,pdk-qcom" remote="spiceos" />
 
   <!-- external repos -->
   <project path="external/json-c" name="LineageOS/android_external_json-c" remote="lineage" />
