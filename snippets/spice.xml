@@ -99,7 +99,12 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="spiceos" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="spiceos" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="arrow" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="spiceos" />  
   <project path="packages/apps/SpiceOSSettings" name="android_packages_apps_SpiceOSSettings" remote="spiceos" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="spiceos" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="spiceos" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="spiceos" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="spiceos" />  
 
   <!-- prebuilt repos -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" clone-depth="1" remote="arrow" />
