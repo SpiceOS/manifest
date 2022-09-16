@@ -133,6 +133,7 @@
   <!-- system repos -->
   <project path="system/core" name="android_system_core" remote="spiceos" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="spiceos" />
+  <project path="system/vold" name="android_system_vold" remote="spiceos" />
 
   <!-- tools repos -->
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" />
