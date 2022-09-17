@@ -50,6 +50,7 @@
 
   <!-- external repos -->
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="spiceos" />
+  <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="spiceos" />
   <project path="external/json-c" name="LineageOS/android_external_json-c" remote="lineage" />
   <project path="external/selinux" name="android_external_selinux" remote="spiceos" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="spiceos" />
