@@ -28,6 +28,7 @@
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/libhardware_legacy" />
   <remove-project name="platform/hardware/ril" />
+  <remove-project name="platform/packages/modules/Wifi" />
 
   <!-- packages -->
   <remove-project name="platform/packages/apps/Settings" />
