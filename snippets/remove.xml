@@ -42,6 +42,7 @@
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <remove-project name="platform/packages/apps/DeskClock" />  
   <remove-project name="platform/packages/providers/DownloadProvider" />
+  <remove-project name="platform/system/update_engine" />  
 
   <!-- system -->
   <remove-project name="platform/system/core" />
