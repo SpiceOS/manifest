@@ -123,6 +123,7 @@
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="spiceos" />  
   <project path="packages/apps/SpiceOSSettings" name="android_packages_apps_SpiceOSSettings" remote="spiceos" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="spiceos" />
+  <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="spiceos" />  
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="spiceos" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="spiceos" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="spiceos" />
