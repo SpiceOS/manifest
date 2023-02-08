@@ -1,6 +1,6 @@
 <div align="center">
 <hr>
-<img src="https://github.com/SpiceOS/xda_template/blob/12.1/Banner/header.png?raw=true">
+<img src="https://github.com/SpiceOS/xda_template/blob/13/Banner/header.png?raw=true">
 <br>
 <br>
 <strong><i>Just a spiced up AOSP ROM ;)</i></strong>
@@ -59,5 +59,5 @@ OR, for those with limited bandwidth/storage:
 
 7.Now build
 
-    breakfast codename
-    mka bacon
+    lunch spiceos_device-userdebug
+    make bacon
