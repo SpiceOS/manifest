@@ -59,5 +59,5 @@ OR, for those with limited bandwidth/storage:
 
 7.Now build
 
-    breakfast codename
-    mka bacon
+    lunch spiceos_device_userdebug
+    make bacon
